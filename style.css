@@ -1,0 +1,308 @@
+body
+{
+width:950px;
+margin:auto;
+font-family:Helvetica;
+background-color:#004466;
+
+}
+
+a {
+	text-decoration: none;
+}
+
+nav ul { 
+list-style-type: none; 
+margin: 0; 
+padding: 0; 
+background-color: black;
+overflow: auto; 
+
+display: inline-block;
+}
+
+nav ul li { 
+float: left; 
+border-right: 1px solid white; 
+
+}
+nav ul li a { 
+display: block; 
+color: white;
+padding: 8px 16px; 
+text-align: center;
+}
+nav ul li a:visited {
+color: white;
+}
+
+nav .active { 
+background-color: #8080ff; /* onaj koji je aktivan je te boje*/
+}
+nav ul li:hover { 
+background-color: #8080ff; /* tamnosiva boja */
+}
+#naslov{ 
+color:red;font-size:35px;
+width:300px;
+float:left;
+text-align:center;
+
+}
+nav{
+margin-left:150px;
+
+}
+
+
+#main {
+background-color:white;
+border-color:black;
+border-style:solid;
+margin:10px;
+width:900px;
+padding:10px;
+text-align:center;
+height:1100px;
+
+
+}
+#slikahp
+{
+margin:auto;
+
+}
+header
+{
+margin-bottom:10px;
+}
+nav
+{
+margin:auto;
+}
+
+#prvi, #drugi, #treci
+{
+width:250px;
+height:400px;
+background-color:#8080ff;
+border-color:black;
+border-style:solid;
+display:inline-block;
+margin:15px;
+overflow:auto;
+border-radius:8px;
+position: relative; /*zbog pozivioniranja buttona njegov perenrt mora da bude relativno pozicioniran(buttonov perentd) */
+color:white;
+font-size:20px;
+
+}
+
+#prvi > div, #drugi > div, #treci > div {
+	bottom: 10px;
+	position: absolute;      /* sve sto je u njima ce biti pozicionirano u odnosu na njih*/
+	right: 10px;
+	
+}
+
+footer
+{
+margin:20px;
+text-align:center;
+}
+h1
+{
+color:white;
+margin:5px;
+font-family:Abril Fatface;
+}
+h2
+{
+font-size:50px;	
+font-family:Abril Fatface;
+}
+
+#onama
+{
+	font-size:20px;
+	font-family:Helvetica;
+	color:black;
+	line-height:1.6;
+}
+
+#usluge #main
+{
+	text-align:left;
+	color:black;
+	
+}
+#note
+{
+width:830px;
+height:200px;
+margin:20px;
+padding:15px;
+background-color:#ccf2ff;
+text-align:center;
+
+
+}
+table
+{
+ width:100%; 
+ text-align:center;
+
+}
+table,th,td
+{
+	border: 1px solid black;
+  border-collapse: collapse;
+  height:200px;
+  
+}
+#p
+{
+	background-color: #f1f1c1;
+}
+#o
+{
+	background-color: #ffff80;
+}
+	
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+  text-align: start;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade2 {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 100px;
+  height:100pxl
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: auto;
+  font-size:20px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+  
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
